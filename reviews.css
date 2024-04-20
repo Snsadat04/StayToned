@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Set background color */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #reviews-container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack reviews vertically */
+    align-items: flex-start; /* Align reviews to the left */
+  }
+  
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    background-color: #88bdbc; /* Set background color */
+    color: #774243; /* Set text color for good contrast */
+    margin-bottom: 10px; /* Add some bottom margin between reviews */
+  }
+  
+  .review:last-child {
+    border-bottom: none;
+  }
+  
+  .review p {
+    margin: 5px 0;
+  }
+  
+  .review .name {
+    font-weight: bold;
+  }
+  
+  .review .date {
+    font-style: italic;
+  }
