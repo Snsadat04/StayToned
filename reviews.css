@@ -1,44 +1,88 @@
-body {
-    font-family: Arial, sans-serif;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Set background color */
+    box-sizing: border-box;
   }
   
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Container Styles */
   .container {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
     background-color: #fff;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
+  form div {
+    margin-bottom: 15px;
   }
   
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Reviews Styles */
   #reviews-container {
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack reviews vertically */
-    align-items: flex-start; /* Align reviews to the left */
+    margin-top: 20px;
   }
   
   .review {
-    border-bottom: 1px solid #ddd;
-    padding: 20px;
-    background-color: #88bdbc; /* Set background color */
-    color: #774243; /* Set text color for good contrast */
-    margin-bottom: 10px; /* Add some bottom margin between reviews */
-  }
-  
-  .review:last-child {
-    border-bottom: none;
-  }
-  
-  .review p {
-    margin: 5px 0;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
   .review .name {
@@ -46,5 +90,10 @@ body {
   }
   
   .review .date {
-    font-style: italic;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .review .text {
+    margin-top: 10px;
   }
