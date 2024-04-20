@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #b0b0b0;
+    color: #008080;
+    text-align: center;
+  }
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+    font-weight: normal; 
+    color: black;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+    color: black; 
+}
+#gifs{
+    width: 300px;
+    height: 300px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    border-color:#008080; 
+    align-items: center;
+}
+
+.exercise{
+    text-align: center;
+}
+
+.exercise img{
+    width: 300px;
+    height: 300px;
+    display: block; 
+}
+
+.title{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px; 
+    font-size: 16x; 
+    color: black; 
+}
