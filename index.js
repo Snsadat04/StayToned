@@ -11,9 +11,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
+const OPEN_AI_KEY="sk-proj-ihzwuksiQFpcAB2OjMEcT3BlbkFJEcZ1ypAgtotaPA6wSn2Z";
+
 const openai = new OpenAIApi(
     new Configuration({
-      apiKey: process.env['OPEN_AI_KEY'], // 
+      apiKey: OPEN_AI_KEY, // 
     })
 );
 
